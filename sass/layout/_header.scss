@@ -1,0 +1,30 @@
+.header {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ececec;
+  @media screen and (min-width: 768px) {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  &__container {
+    display: flex;
+    align-items: center;
+    @media screen and (min-width: 768px) {
+      justify-content: space-between;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__logo {
+    @media screen and (min-width: 1200px) {
+      margin-right: 93px;
+    }
+  }
+}
+
+.logo__accent--black {
+  color: var(--black-logo-color);
+}

@@ -1,0 +1,14 @@
+.active::after {
+  display: none;
+  @media screen and (min-width: 768px) {
+    content: "";
+    width: 100%;
+    height: 4px;
+    background-color: rgba(33, 150, 243, 1);
+    position: absolute;
+    display: block;
+    top: 76px;
+
+    border-radius: 2px;
+  }
+}

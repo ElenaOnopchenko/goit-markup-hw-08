@@ -1,0 +1,34 @@
+.navigation {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
+.menu-list {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    &__item:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
+}
+
+.menu-list__link {
+  color: var(--title-text-color);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  display: block;
+  padding: 32px 0px;
+  transition: color var(--duration-and-timing-function);
+  &:hover,
+  &:focus {
+    color: var(--primary-accent-color);
+  }
+  &--current {
+    color: var(--primary-accent-color);
+    position: relative;
+  }
+}
